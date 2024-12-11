@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const distance = countdownDate - now;
 
         const months = (distance / (1000 * 60 * 60 * 24 * 30.44)).toFixed(2);
-        const weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
+        const weeks = (distance / (1000 * 60 * 60 * 24 * 7)).toFixed(2);
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor(distance / (1000 * 60 * 60));
         const minutes = Math.floor(distance / (1000 * 60));
