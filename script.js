@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const minutes = Math.floor(distance / (1000 * 60));
         const seconds = Math.floor(distance / 1000);
 
         document.getElementById('months').innerText = months;
