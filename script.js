@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const months = (distance / (1000 * 60 * 60 * 24 * 30.44)).toFixed(2);
         const weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        const hours = (distance / (1000 * 60 * 60)).toFixed(2);
 
         document.getElementById('months').innerText = months;
         document.getElementById('weeks').innerText = weeks;
         document.getElementById('days').innerText = days;
-        document.getElementById('seconds').innerText = seconds;
+        document.getElementById('hours').innerText = hours;
 
         if (distance < 0) {
             clearInterval(interval);
